@@ -1,0 +1,1 @@
+<main><h1>Terms of Service</h1><p>Skill-based predictions only. No gambling.</p></main>

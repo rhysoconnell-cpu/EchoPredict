@@ -1,0 +1,1 @@
+<main><h1>Affiliate Disclosure</h1><p>Some links may pay us a commission.</p></main>
