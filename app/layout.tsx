@@ -1,22 +1,34 @@
-export const metadata = { title: "EchoPredict", description: "Skill-based social predictions" };
+
+export const metadata = { title: "EchoPredict", description: "AI skill-based predictions with creator monetization" };
 import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-        <header className="p-4 border-b border-white/10">
-          <div className="container mx-auto flex items-center justify-between">
-            <a href="/" className="font-bold">EchoPredict</a>
-            <nav className="text-sm space-x-4">
-              <a href="/dashboard">Dashboard</a>
-              <a href="/admin/metrics">Admin</a>
+      <body>
+        <nav className="nav">
+          <div className="container nav-inner">
+            <a className="logo" href="/">
+              <span className="logo-badge" />
+              <span>EchoPredict</span>
+            </a>
+            <div style={{display:'flex',gap:10}}>
+              <a className="btn ghost" href="/dashboard">Dashboard</a>
+              <a className="btn" href="/account">Upgrade</a>
+            </div>
+          </div>
+        </nav>
+        <main className="container">{children}</main>
+        <footer>
+          <div className="container" style={{display:'flex',justifyContent:'space-between',gap:16,flexWrap:'wrap'}}>
+            <div>© 2025 EchoPredict</div>
+            <div style={{display:'flex',gap:14}}>
               <a href="/privacy">Privacy</a>
               <a href="/terms">Terms</a>
-            </nav>
+              <a href="/disclosure">Disclosure</a>
+            </div>
           </div>
-        </header>
-        <main className="container mx-auto p-6">{children}</main>
+        </footer>
       </body>
     </html>
   );
