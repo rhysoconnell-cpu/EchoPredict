@@ -67,4 +67,11 @@ a{color:var(--brand);text-decoration:none}
 
 .cards{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin-top:24px}
 @media (max-width:900px){.cards{grid-template-columns:1fr}}
-.card{background:linear-gradient(180deg, rgba(17,24,39,.92), rgba(15
+.card{
+  background:linear-gradient(180deg, rgba(17,24,39,.92), rgba(15,23,42,.88));
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px;
+}
+
+.footer{margin-top:50px;padding:26px 0;border-top:1px solid var(--border);color:#99a6b6}
